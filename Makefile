@@ -8,7 +8,7 @@ SRC_DIRS ?= ./
 
 SRCS := $(shell find $(SRC_DIRS) -name "*.cc" -or -name "*.c" -or -name "*.s")
 OBJS := $(addsuffix .o,$(basename $(SRCS)))
-DEPS := $(OBJS:.o=.d)
+DEPS := $(OBJS:.o=.d) .ccls-cache/
 
 app: $(OBJS)
 	$(CXX) $(LDFLAGS) $(OBJS) -o $@ $(LDLIBS)
