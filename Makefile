@@ -13,6 +13,6 @@ DEPS := $(OBJS:.o=.d) .ccls-cache/
 app: $(OBJS)
 	$(CXX) $(LDFLAGS) $(OBJS) -o $@ $(LDLIBS)
 clean:
-	$(RM) app $(OBJS) $(DEPS)
+	$(RM) -rf app $(OBJS) $(DEPS)
 
 -include $(DEPS)
