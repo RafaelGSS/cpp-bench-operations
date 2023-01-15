@@ -9,7 +9,7 @@ Inspired by [nodejs-bench-operations][].
 
 ## Results
 
-See [RESULTS.md](./RESULTS.MD).
+See [RESULTS.md](./RESULTS.md).
 
 ## Compile and run
 
